@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="14dp"
+      app:cardElevation="8dp">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searc_view"
+        app:defaultQueryHint="Поиск новостей..."
+        app:iconifiedByDefault="false"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+  </androidx.cardview.widget.CardView>
+  <HorizontalScrollView
+      android:layout_margin="6dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+      <Button
+          android:id="@+id/btn_1"
+          android:textSize="12sp"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:text="Бизнес"/>
+      <Button
+          android:id="@+id/btn_2"
+          android:textSize="12sp"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Развлечение"/>
+
+      <Button
+          android:id="@+id/btn_3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="6dp"
+          android:padding="6dp"
+          android:text="Общее"
+          android:textSize="12sp" />
+
+      <Button
+          android:id="@+id/btn_4"
+          android:textSize="12sp"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Здоровье"/>
+      <Button
+          android:id="@+id/btn_5"
+          android:textSize="12sp"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Технологии"/>
+      <Button
+          android:id="@+id/btn_6"
+          android:textSize="12sp"
+          android:padding="6dp"
+          android:layout_margin="6dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Спорт"/>
+    </LinearLayout>
+  </HorizontalScrollView>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_margin="8dp"
+      android:id="@+id/recyclerview"
+      android:layout_height="match_parent"/>
+
+</LinearLayout>
